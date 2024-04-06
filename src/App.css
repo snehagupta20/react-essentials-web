@@ -1,38 +1,166 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: radial-gradient(#280a48, #20043d);
+  color: #ebe7ef;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+}
+
+.main{
   text-align: center;
+  margin: 3rem 0 ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img{
+  width: 10rem;
+  height: 5rem;
+  object-fit:cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1{
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5rem;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff); 
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header p{
+  font-size: 1.25rem;
+  color: #8964b0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+.mid-div h2{
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 3rem ;
+  color: #a18aba;
+}
+
+/* CoreConcepts */
+
+.core-concept-main{
+  background-color: #140524 ;
+  width: 100vh;
+  margin: 4rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.core-concept-main h2{
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a18aba;
+  padding: 1.5rem;
+}
+
+.core-concept-sub{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.core-concept img{
+  width: 6rem;
+  height: 4rem;
+  object-fit:cover;
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.core-concept p{
+  font-size: 0.9rem;
+  padding: 1rem;
 }
+
+
+/* tabs */
+
+.tab{
+  /* margin: 0 0 1.5rem 0; */
+  /* color: #a18aba; */
+  /* font-size: 0.9rem; */
+  /* color: #a18aba; */
+  font-family: "Roboto Condensed", sans-serif;
+  /* font-size: 1rem; */
+  /* background-color: #1b082f; */
+  /* color: #ebe7ef; */
+  /* background-color: #7925d3; */
+  /* color: #ebe7ef; */
+  /* border-radius: 6px; */
+  /* background-color: #2f1d43; */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);  */
+  width: 100vh;
+  /* height: 100vh; */
+  /* background-color: black; */
+  margin: 4rem auto;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* justify-self: center; */
+  text-align: left;
+  /* padding: 2rem ; */
+  /* gap: 1.5rem; */
+}
+
+
+.tab h2{
+  color: #a18aba;
+}
+
+.buttons{
+  margin: 0.5rem;
+}
+
+button{
+  padding:1rem;
+  margin: 0 0.5rem 0 0.5rem;
+  /* background-color: none; */
+  background: none;
+  color: #a18aba;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease ;
+  border-radius: 6px;
+}
+
+button:hover ,
+button:active ,
+.active{
+  /* background-color: #140524; */
+  background-color:#7925d3;
+  color: #ebe7ef;
+}
+
+.tab-content{
+  /* font-family: "Roboto Condensed", sans-serif; */
+  font-family: "Quicksand", sans-serif;
+  width: 100vh;
+  /* height: 100vh; */
+  min-width: 32rem;
+  /* min-height: 32rem; */
+  background-color: #140524 ;
+  padding: 2rem;
+}
+
+.tab-content p,
+.tab-content code{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
